@@ -9,7 +9,7 @@ Parser.prototype.parse = function(dateString) {
     var dd = m[this.layout.indexOf('d') + 1];
     var mm = m[this.layout.indexOf('m') + 1];
     var yy = m[this.layout.indexOf('y') + 1];
-    var date = new Date([yy, mm, dd].join('-'));
+    var date = new Date(Number(yy), Number(mm) - 1, Number(dd));
     if (date.getFullYear() == yy && (date.getMonth() + 1) == mm && date.getDate() == dd) {
       return date;
     }
