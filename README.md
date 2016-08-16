@@ -1,6 +1,6 @@
 # ddmmyyyy
 
-Parses UTC dates in dd/mm/yyyy or mm/dd/yyyy format and rejects invalid strings.
+Parses local dates in dd/mm/yyyy or mm/dd/yyyy format and rejects invalid strings.
 
 # example
 
