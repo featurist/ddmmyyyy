@@ -1,10 +1,10 @@
 {
   "name": "ddmmyyyy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Parses UTC dates in dd/mm/yyyy or mm/dd/yyyy formats",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "TZ=UTC mocha && TZ=Etc/GMT-12 mocha && TZ=Etc/GMT+12 mocha"
   },
   "author": "Josh Chisholm <joshuachisholm@gmail.com>",
   "license": "MIT",

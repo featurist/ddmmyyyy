@@ -1,7 +1,7 @@
 var ddmmyyyy = require('..');
 var expect = require('chai').expect;
 
-describe('ddmmyyyy', function() {
+describe('ddmmyyyy (' + process.env.TZ + ')', function() {
 
   var parser;
 
