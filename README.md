@@ -18,4 +18,5 @@ var parser = ddmmyyyy(/^(\d\d)\/(\d\d)\/(\d\d\d\d)$/, 'dmy');
 ```JavaScript
 parser.parse('13/12/2001'); // -> Thu Dec 13 2001 00:00:00 GMT+0000 (GMT)
 parser.parse('12/05/1976'); // -> Wed May 12 1976 01:00:00 GMT+0100 (BST)
+parser.parse('junk'); // -> null
 ```
